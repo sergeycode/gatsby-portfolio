@@ -1,0 +1,16 @@
+[
+  {
+    "title": "WRRC",
+    "slug": "wrrc",
+    "url": "https://wrrcsa.org/",
+    "image": "./images/wrrc.jpg",
+    "description": "Custom WordPress theme"
+  },
+  {
+    "title": "The Market at the Western Fair",
+    "slug": "the-market-at-the-western-fair",
+    "url": "https://themarketwfd.com/",
+    "image": "./images/the-market.jpg",
+    "description": "Custom WordPress theme"
+  }
+]
