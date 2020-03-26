@@ -39,9 +39,6 @@ const IndexPage = () => {
         const description = project.description
         const slug = project.slug
         const imageData = project.image.childImageSharp.fluid
-        console.log(imageData)
-        console.log(slug)
-        console.log(title)
         return (
           <ProjectPreview
             title={title}
