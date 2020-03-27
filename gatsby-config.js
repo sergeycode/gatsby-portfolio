@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `HandCraftedWeb by Sergey Ovcharenko`,
-    description: `Sergey Ovcharenko portfolio`,
+    title: `handcraftedweb`,
+    description: `handcraftedweb - portfolio by Sergey Ovcharenko `,
     author: `@sergeycode`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,4 +33,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

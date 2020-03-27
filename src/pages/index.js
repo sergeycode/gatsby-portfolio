@@ -1,10 +1,10 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
-import ProjectPreview from "../components/project-preview"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
+import ProjectPreview from "../components/project-preview";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -27,18 +27,18 @@ const IndexPage = () => {
         }
       }
     }
-  `)
+  `);
 
-  const projects = data.allProjectsJson.edges
+  const projects = data.allProjectsJson.edges;
 
   return (
     <Layout>
       <SEO title="Home" />
-      {projects.map(({ node: project }) => {
-        const title = project.title
-        const description = project.description
-        const slug = project.slug
-        const imageData = project.image.childImageSharp.fluid
+      {/* {projects.map(({ node: project }) => {
+        const title = project.title;
+        const description = project.description;
+        const slug = project.slug;
+        const imageData = project.image.childImageSharp.fluid;
         return (
           <ProjectPreview
             title={title}
@@ -46,11 +46,10 @@ const IndexPage = () => {
             imageData={imageData}
             slug={slug}
           />
-        )
-      })}
-      <Link to="/page-2/">Go to page 2</Link>
+        );
+      })} */}
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

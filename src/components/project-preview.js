@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { Link } from "gatsby";
+import Image from "gatsby-image";
 
 const ProjectPreview = ({ slug, title, description, imageData }) => (
   <div className="project-preview">
@@ -13,6 +13,6 @@ const ProjectPreview = ({ slug, title, description, imageData }) => (
     <p>{description}</p>
     <Link to={`/${slug}/`}>View this project &rarr;</Link>
   </div>
-)
+);
 
-export default ProjectPreview
+export default ProjectPreview;

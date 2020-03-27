@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { Link } from "gatsby";
+import Image from "gatsby-image";
 
 const Project = ({ title, description, url, imageData }) => (
   <div className="progect">
@@ -14,6 +14,6 @@ const Project = ({ title, description, url, imageData }) => (
       <Link to="/">&larr; back to all projects</Link>
     </p>
   </div>
-)
+);
 
-export default Project
+export default Project;
