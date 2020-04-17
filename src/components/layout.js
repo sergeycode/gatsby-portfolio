@@ -12,7 +12,7 @@ import { Link } from "gatsby";
 import Header from "./header";
 import "../styles/style.scss";
 
-const Layout = ({ siteTitle, children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

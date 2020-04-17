@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `handcraftedweb`,
-    description: `handcraftedweb - portfolio by Sergey Ovcharenko `,
+    description: `handcraftedweb - portfolio by Sergey Ovcharenko`,
     author: `@sergeycode`,
   },
   plugins: [

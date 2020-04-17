@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024">
+  <defs>
+    <radialGradient id="group-a" cx="69.065%" cy="-36.763%" r="164.446%" fx="69.065%" fy="-36.763%" gradientTransform="matrix(-.34707 .8728 -.7052 -.55454 .671 -1.174)">
+      <stop offset="0%" stop-color="#2F2F2F"/>
+      <stop offset="56.729%" stop-color="#1D3D3B"/>
+      <stop offset="100%" stop-color="#16B1A9"/>
+    </radialGradient>
+    <linearGradient id="group-b" x1="74.635%" x2="31.524%" y1="37.516%" y2="69.22%">
+      <stop offset="0%" stop-color="#2F2F2F"/>
+      <stop offset="100%" stop-color="#16B1A9"/>
+    </linearGradient>
+    <linearGradient id="group-c" x1="167.804%" x2="33.25%" y1="-11.801%" y2="67.763%">
+      <stop offset="0%" stop-color="#2F2F2F"/>
+      <stop offset="100%" stop-color="#16B1A9"/>
+    </linearGradient>
+    <linearGradient id="group-d" x1="167.804%" x2="33.25%" y1="-48.189%" y2="78.221%">
+      <stop offset="0%" stop-color="#2F2F2F"/>
+      <stop offset="100%" stop-color="#16B1A9"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-1 -17)">
+    <g transform="translate(1 17)">
+      <rect width="1440" height="1024" fill="url(#group-a)"/>
+      <polygon fill="url(#group-b)" points="0 0 1440 0 1440 1024 1224.659 1024 0 1024" opacity=".206"/>
+    </g>
+    <path fill="url(#group-c)" d="M1440.13098,342 C1125.04453,333.484845 902.127268,445.438526 771.379199,677.861044 C640.631131,910.283562 383.504732,1035.03505 0,1052.11552 L0,1374.69482 C289.408545,1468.35009 566.328817,1390.12583 830.760815,1140.02202 C1095.19281,889.918207 1298.3162,764.866302 1440.13098,764.866302 L1440.13098,342 Z" opacity=".367" transform="matrix(-1 0 0 1 1440.131 0)"/>
+    <path fill="url(#group-d)" d="M1440,0.462948649 C1259.14807,109.501254 1087.04582,252.819946 923.693237,430.419025 C741.696107,628.288707 795.922473,783.394642 503.997529,932.194393 C358.398753,1006.40889 190.399577,1046.84265 0,1053.49567 L0,1346.77429 C297.369623,1372.1052 588.606679,1279.0807 873.711169,1067.7008 C1158.81566,856.320907 1347.5786,754.522151 1440,762.304538 L1440,0.462948649 Z" opacity=".428" transform="matrix(-1 0 0 1 1440 0)"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  @include screen("sm") {
+    max-width: 540px;
+  }
+  @include screen("md") {
+    max-width: 720px;
+  }
+  @include screen("lg") {
+    max-width: 960px;
+  }
+  @include screen("xl") {
+    max-width: 1140px;
+  }
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background: url("/background.svg") no-repeat center/cover;
+}

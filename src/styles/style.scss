@@ -1,6 +1,6 @@
+@import "variables.scss";
 @import "breakpoints.scss";
-
-header {
-  @include screen("sm") {
-  }
-}
+@import "reboot.scss";
+@import "header.scss";
+@import "buttons.scss";
+@import "layout.scss";
