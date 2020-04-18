@@ -21,6 +21,7 @@ const Header = () => {
           <button
             type="button"
             className="btn btn-menu"
+            title="Menu"
             onClick={handleToggle}
             aria-expanded={isToggled ? "true" : "false"}
           >
@@ -47,6 +48,7 @@ const Header = () => {
                     className="animate-top"
                     href="https://twitter.com/sergeycode"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     twitter
                   </a>
@@ -56,6 +58,7 @@ const Header = () => {
                     className="animate-top"
                     href="https://www.linkedin.com/in/sergeyovcharenko/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     linkedin
                   </a>
@@ -65,6 +68,7 @@ const Header = () => {
                     className="animate-top"
                     href="https://github.com/sergeycode"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     github
                   </a>
