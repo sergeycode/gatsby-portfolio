@@ -4,6 +4,11 @@ html {
 body {
   font-size: 1.6rem;
 }
+.font {
+  &-xlt {
+    font-weight: 200;
+  }
+}
 
 .container {
   width: 100%;
@@ -12,7 +17,7 @@ body {
     max-width: 540px;
   }
   @include screen("md") {
-    max-width: 720px;
+    max-width: 768px;
   }
   @include screen("lg") {
     max-width: 960px;

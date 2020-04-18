@@ -20,26 +20,57 @@ const Header = () => {
           </div>
           <button
             type="button"
-            className="menu"
+            className="btn btn-menu"
             onClick={handleToggle}
             aria-expanded={isToggled ? "true" : "false"}
           >
-            <span className="menu-line" />
-            <span className="menu-line" />
+            <span className="btn-menu-line" />
+            <span className="btn-menu-line" />
           </button>
-          <div className="nav-menu">
-            <ul className="nav-menu-list">
-              <li className="nav-menu-list-item">
-                <Link className="nav-menu-link" to="/">
+          <div className="nav-menu" data-toggle={isToggled ? "true" : "false"}>
+            <ul className="nav-menu-list font-xlt">
+              <li className="nav-menu-list-item animate-container">
+                <Link className="nav-menu-link animate-top" to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-menu-list-item">
-                <Link className="nav-menu-link" to="/projects">
+              <li className="nav-menu-list-item animate-container">
+                <Link className="nav-menu-link animate-top" to="/projects">
                   Projects
                 </Link>
               </li>
             </ul>
+            <div className="nav-menu-social">
+              <ul className="nav-menu-list-social font-xlt">
+                <li className="animate-container">
+                  <a
+                    className="animate-top"
+                    href="https://twitter.com/sergeycode"
+                    target="_blank"
+                  >
+                    twitter
+                  </a>
+                </li>
+                <li className="animate-container">
+                  <a
+                    className="animate-top"
+                    href="https://www.linkedin.com/in/sergeyovcharenko/"
+                    target="_blank"
+                  >
+                    linkedin
+                  </a>
+                </li>
+                <li className="animate-container">
+                  <a
+                    className="animate-top"
+                    href="https://github.com/sergeycode"
+                    target="_blank"
+                  >
+                    github
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
