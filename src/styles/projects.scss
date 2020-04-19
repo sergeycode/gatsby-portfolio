@@ -1,11 +1,18 @@
 .projects {
-  background: url("/background-projects.svg") repeat-y center/cover;
+  background: url("/background-projects.svg") no-repeat center/cover;
   &-heading {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.8rem;
     letter-spacing: 0.3rem;
+    @include screen("sm") {
+      font-size: 2.4rem;
+    }
+    @include screen("xl") {
+      margin: 5rem auto 8rem;
+      font-size: 3.6rem;
+    }
   }
   .card {
     width: 70%;
@@ -13,24 +20,119 @@
     max-width: 50rem;
     position: relative;
     color: #fff;
-    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.3);
+    @include screen("sm") {
+      margin: 6rem auto 0;
+    }
+    @include screen("xl") {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: none;
+      margin: 10rem auto 0;
+    }
+    &-image {
+      display: block;
+      box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.3);
+      @include screen("xl") {
+        width: 40%;
+      }
+      @include screen("fhd") {
+        width: 55rem;
+      }
+      &:hover,
+      &:focus {
+        ~ .card-description {
+          .card-line {
+            &:before {
+              @include screen("xl") {
+                transform: translateX(100%);
+              }
+            }
+          }
+        }
+      }
+    }
     &-description {
-      height: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
-      top: 6rem;
+      top: 0;
+      height: 100%;
       left: -2rem;
-      margin: auto;
       text-shadow: 2px 2px 2px #333;
       text-transform: capitalize;
+      &:hover,
+      &:focus {
+        .card-line {
+          &:before {
+            @include screen("xl") {
+              transform: translateX(100%);
+            }
+          }
+        }
+      }
+      @include screen("sm") {
+        left: -3rem;
+      }
+      @include screen("md") {
+        left: -4.5rem;
+      }
+      @include screen("xl") {
+        position: static;
+        margin-left: 10rem;
+      }
     }
     &-heading {
       font-size: 2rem;
       letter-spacing: 0.3rem;
       line-height: 1;
+      @include screen("sm") {
+        font-size: 2.8rem;
+      }
+      @include screen("md") {
+        font-size: 4rem;
+      }
+      @include screen("xl") {
+        font-size: 4rem;
+      }
     }
     &-subheading {
       font-size: 2rem;
       line-height: 1;
+      @include screen("sm") {
+        font-size: 2.8rem;
+      }
+      @include screen("md") {
+        font-size: 4rem;
+      }
+      @include screen("xl") {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-top: 1rem;
+      }
+    }
+    &-line {
+      display: none;
+      @include screen("xl") {
+        display: block;
+        width: 100%;
+        height: 0.5rem;
+        background-color: $color-primary;
+        position: relative;
+        overflow: hidden;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          transform: translateX(-100%);
+          transition: transform 0.5s $cubic-bezier;
+        }
+      }
     }
   }
 }

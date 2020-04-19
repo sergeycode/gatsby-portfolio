@@ -4,12 +4,13 @@ import Image from "gatsby-image";
 
 const ProjectsCard = ({ slug, title, description, imageData }) => (
   <div className="card">
-    <Link to={`/${slug}/`}>
+    <Link className="card-image" to={`/${slug}/`}>
       <Image fluid={imageData} alt={title} />
     </Link>
     <Link to={`/${slug}/`} className="card-description">
       <h2 className="card-heading font-xlt">{title}</h2>
       <p className="card-subheading font-b">{description}</p>
+      <div className="card-line"></div>
     </Link>
   </div>
 );
