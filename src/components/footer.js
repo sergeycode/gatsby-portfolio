@@ -3,15 +3,7 @@ import React from "react";
 const Footer = () => (
   <footer>
     <div className="container">
-      © {new Date().getFullYear()} Sergey Ovcharenko <br /> Built with
-      {` `}
-      <a
-        href="https://www.gatsbyjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Gatsby
-      </a>
+      <p className="font-xlt">© {new Date().getFullYear()} Sergey Ovcharenko</p>
     </div>
   </footer>
 );
