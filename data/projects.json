@@ -1,5 +1,19 @@
 [
   {
+    "title": "Future Students UFT",
+    "slug": "future-students-uft",
+    "url": "https://www.trinity.utoronto.ca/",
+    "image": "./images/trinity-college.jpg",
+    "description": "Custom WordPress theme"
+  },
+  {
+    "title": "Future Students UFT",
+    "slug": "future-students-uft",
+    "url": "https://future.utoronto.ca/",
+    "image": "./images/future-utoronto.jpg",
+    "description": "Custom WordPress theme"
+  },
+  {
     "title": "WRRC",
     "slug": "wrrc",
     "url": "https://wrrcsa.org/",
@@ -7,10 +21,38 @@
     "description": "Custom WordPress theme"
   },
   {
-    "title": "The Market at the Western Fair",
+    "title": "The Market",
     "slug": "the-market-at-the-western-fair",
     "url": "https://themarketwfd.com/",
     "image": "./images/the-market.jpg",
     "description": "Custom WordPress theme"
+  },
+  {
+    "title": "Redeemer University",
+    "slug": "redeemer",
+    "url": "https://www.redeemer.ca/annual-report-2016-2017/",
+    "image": "./images/redeemer.jpg",
+    "description": "Landing page"
+  },
+  {
+    "title": "St.Lucia",
+    "slug": "st-lucia",
+    "url": "https://saint-lucia.now.sh/",
+    "image": "./images/st-lucia.jpg",
+    "description": "Landing page"
+  },
+  {
+    "title": "Digital Web UX",
+    "slug": "digital-web-ux",
+    "url": "https://digitalwebux.now.sh/",
+    "image": "./images/digitalwebux.jpg",
+    "description": "Landing page"
+  },
+  {
+    "title": "Brands For You",
+    "slug": "brands-for-you",
+    "url": "http://brandsforyou.surge.sh/",
+    "image": "./images/brandsforyou.jpg",
+    "description": "Landing page"
   }
 ]

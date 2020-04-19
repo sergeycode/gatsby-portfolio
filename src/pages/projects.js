@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import { Link } from "gatsby";
-import ProjectPreview from "../components/project-preview";
+import ProjectsCard from "../components/projects-card";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -33,21 +32,26 @@ const ProjectsPage = () => {
 
   return (
     <Layout>
-      <SEO title="Projects" />
-      {projects.map(({ node: project }) => {
-        const title = project.title;
-        const description = project.description;
-        const slug = project.slug;
-        const imageData = project.image.childImageSharp.fluid;
-        return (
-          <ProjectPreview
-            title={title}
-            description={description}
-            imageData={imageData}
-            slug={slug}
-          />
-        );
-      })}
+      <SEO title="Projects" description="Projects by Sergey Ovcharenko" />
+      <div className="projects page">
+        <div className="container">
+          <h1 className="projects-heading font-xlt">Projects</h1>
+          {projects.map(({ node: project }) => {
+            const title = project.title;
+            const description = project.description;
+            const slug = project.slug;
+            const imageData = project.image.childImageSharp.fluid;
+            return (
+              <ProjectsCard
+                title={title}
+                description={description}
+                imageData={imageData}
+                slug={slug}
+              />
+            );
+          })}
+        </div>
+      </div>
     </Layout>
   );
 };

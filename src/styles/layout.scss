@@ -11,11 +11,17 @@ body {
   &-sb {
     font-weight: 600;
   }
+  &-b {
+    font-weight: 700;
+  }
 }
 .text {
   &-center {
     text-align: center;
   }
+}
+.page {
+  padding-top: 11.5rem;
 }
 
 .container {
