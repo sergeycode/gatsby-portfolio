@@ -3,6 +3,7 @@ html {
 }
 body {
   font-size: 1.6rem;
+  color: $color-text;
 }
 .font {
   &-xlt {
@@ -39,4 +40,31 @@ body {
   @include screen("xl") {
     max-width: 1140px;
   }
+}
+
+.ReactModal__Overlay {
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  &--after-open {
+    opacity: 1;
+  }
+}
+.ReactModal__Content {
+  padding: 0 !important;
+  transform: translateY(5rem);
+  transition: transform 0.5s ease-in-out;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.3);
+  &--after-open {
+    transform: translateY(0);
+  }
+  &--before-close {
+    transform: translateY(5rem);
+  }
+}
+body.ReactModal__Body--open {
+  overflow: hidden;
 }

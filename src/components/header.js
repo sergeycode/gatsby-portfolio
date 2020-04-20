@@ -14,7 +14,7 @@ const Header = () => {
             <div className="logo-line" />
             <div className="logo-line" />
             <Link className="logo-link" to="/">
-              <div className="logo-hand">hnd</div>
+              <div className="logo-hand">hand</div>
               <div className="logo-crafted">crafted</div>
             </Link>
           </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
 import Project from "../components/project";
 
 export const query = graphql`
@@ -9,6 +8,11 @@ export const query = graphql`
       title
       description
       url
+      short
+      details
+      design
+      role
+      tech
       image {
         childImageSharp {
           fluid {
@@ -22,21 +26,28 @@ export const query = graphql`
 
 const ProjectTemplate = ({ data }) => {
   const project = data.projectsJson;
-
   const title = project.title;
   const description = project.description;
   const url = project.url;
+  const short = project.short;
+  const details = project.details;
+  const design = project.design;
+  const role = project.role;
+  const tech = project.tech;
   const imageData = project.image.childImageSharp.fluid;
 
   return (
-    <Layout>
-      <Project
-        title={title}
-        description={description}
-        imageData={imageData}
-        url={url}
-      />
-    </Layout>
+    <Project
+      title={title}
+      description={description}
+      imageData={imageData}
+      url={url}
+      short={short}
+      details={details}
+      design={design}
+      role={role}
+      tech={tech}
+    />
   );
 };
 

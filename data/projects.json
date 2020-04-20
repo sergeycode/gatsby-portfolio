@@ -1,58 +1,98 @@
 [
   {
     "title": "Trinity College",
-    "slug": "future-students-uft",
+    "slug": "trinity-college",
     "url": "https://www.trinity.utoronto.ca/",
     "image": "./images/trinity-college.jpg",
-    "description": "Custom WordPress theme"
+    "description": "Custom WordPress theme",
+    "short": "WordPress website",
+    "details": "Custom WordPress theme",
+    "design": "adHOME Creative",
+    "role": "Front End Developer / Back End Developer",
+    "tech": "HTML/CSS/SASS, JS, PHP, Mobile First, Responsive"
   },
   {
     "title": "University of Toronto",
     "slug": "future-students-uft",
     "url": "https://future.utoronto.ca/",
     "image": "./images/future-utoronto.jpg",
-    "description": "Custom WordPress theme"
+    "description": "Custom WordPress theme",
+    "short": "WordPress website",
+    "details": "Drupal to WordPress, custom page builder based on ACF",
+    "design": "adHOME Creative",
+    "role": "Front End Developer / Back End Developer",
+    "tech": "HTML/CSS/SASS, JS, PHP, Mobile First, Responsive"
   },
   {
     "title": "WRRC",
     "slug": "wrrc",
     "url": "https://wrrcsa.org/",
     "image": "./images/wrrc.jpg",
-    "description": "Custom WordPress theme"
+    "description": "Custom WordPress theme",
+    "short": "WordPress website",
+    "details": "1",
+    "design": "adHOME Creative",
+    "role": "Front End Developer / Back End Developer",
+    "tech": "HTML/CSS/SASS, JS, PHP, Mobile First, Responsive"
   },
   {
     "title": "The Market",
     "slug": "the-market-at-the-western-fair",
     "url": "https://themarketwfd.com/",
     "image": "./images/the-market.jpg",
-    "description": "Custom WordPress theme"
+    "description": "Custom WordPress theme",
+    "short": "WordPress website",
+    "details": "Custom WordPress theme for Western Fair Market, London, Ontario",
+    "design": "adHOME Creative",
+    "role": "Front End Developer / Back End Developer",
+    "tech": "HTML/CSS/SASS, JS, PHP, Mobile First, Responsive"
   },
   {
     "title": "Redeemer University",
     "slug": "redeemer",
     "url": "https://www.redeemer.ca/annual-report-2016-2017/",
     "image": "./images/redeemer.jpg",
-    "description": "Landing page"
+    "description": "Landing page",
+    "short": "Landing page with animations on scroll",
+    "details": "Landing page with 30 scrolling subpages",
+    "design": "Res.im",
+    "role": "Front End Developer / Back End Developer",
+    "tech": "HTML/CSS/SASS, JS, PHP, Mobile First, Responsive"
   },
   {
     "title": "St.Lucia",
     "slug": "st-lucia",
     "url": "https://saint-lucia.now.sh/",
     "image": "./images/st-lucia.jpg",
-    "description": "Landing page"
+    "description": "Landing page",
+    "short": "Landing page with animations on scroll",
+    "details": "Landing page for APC Trip",
+    "design": "Res.im",
+    "role": "Front End Developer / Back End Developer",
+    "tech": "HTML/CSS/SASS, JS, PHP, Mobile First, Responsive"
   },
   {
     "title": "Digital Web UX",
     "slug": "digital-web-ux",
     "url": "https://digitalwebux.now.sh/",
     "image": "./images/digitalwebux.jpg",
-    "description": "Landing page"
+    "description": "Landing page",
+    "short": "Colorful HTML template",
+    "details": "HTML template for college project",
+    "design": "Myself",
+    "role": "Designer, Front End Developer",
+    "tech": "HTML/CSS, jQuery, Mobile First, Responsive"
   },
   {
     "title": "Brands For You",
     "slug": "brands-for-you",
     "url": "http://brandsforyou.surge.sh/",
     "image": "./images/brandsforyou.jpg",
-    "description": "Landing page"
+    "description": "Landing page",
+    "short": "HTML template",
+    "details": "Website for the small company in Ukraine. One of my first projects back in 2014",
+    "design": "Myself",
+    "role": "Designer, Front End Developer",
+    "tech": "HTML/CSS, jQuery, Responsive"
   }
 ]
