@@ -1,5 +1,6 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
+import "../styles/style.scss";
 
 const Header = () => {
   const [isToggled, setToggled] = useState(false);
