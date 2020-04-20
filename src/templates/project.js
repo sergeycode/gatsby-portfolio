@@ -8,7 +8,6 @@ export const query = graphql`
       title
       description
       url
-      short
       details
       design
       role
@@ -29,7 +28,6 @@ const ProjectTemplate = ({ data }) => {
   const title = project.title;
   const description = project.description;
   const url = project.url;
-  const short = project.short;
   const details = project.details;
   const design = project.design;
   const role = project.role;
@@ -42,7 +40,6 @@ const ProjectTemplate = ({ data }) => {
       description={description}
       imageData={imageData}
       url={url}
-      short={short}
       details={details}
       design={design}
       role={role}

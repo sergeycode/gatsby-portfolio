@@ -23,6 +23,13 @@ body {
 }
 .page {
   padding: 11.5rem 0;
+  background: url("/background-projects.svg") no-repeat center/cover;
+  &-404 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
 }
 
 .container {
@@ -46,7 +53,7 @@ body {
   z-index: 100;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(33, 33, 33, 0.8) !important;
   &--after-open {
     opacity: 1;
   }
@@ -58,11 +65,23 @@ body {
   border-radius: 0 !important;
   border: none !important;
   box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.3);
+  background: url("/background-projects.svg") no-repeat center/cover !important;
   &--after-open {
     transform: translateY(0);
   }
   &--before-close {
     transform: translateY(5rem);
+  }
+  @include screen("lg") {
+    top: 15% !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 960px;
+    margin: auto;
+  }
+  @include screen("xl") {
+    width: 1140px;
   }
 }
 body.ReactModal__Body--open {
