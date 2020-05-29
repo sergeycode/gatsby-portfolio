@@ -1,12 +1,21 @@
 import { Link } from "gatsby";
 import React, { useState } from "react";
+import { createGlobalStyle } from "styled-components";
 import "../styles/style.scss";
 
 const Header = () => {
   const [isToggled, setToggled] = useState(false);
   const handleToggle = () => setToggled(!isToggled);
+  const GlobalStyle = createGlobalStyle`
+    html, body {
+      overflow: ${props => (props.overflow === "true" ? "hidden" : "visible")};
+    }
+  `;
   return (
     <header className="header">
+      <React.Fragment>
+        <GlobalStyle overflow={isToggled ? "true" : "false"} />
+      </React.Fragment>
       <div className="container">
         <nav className="nav">
           <div className="logo">
